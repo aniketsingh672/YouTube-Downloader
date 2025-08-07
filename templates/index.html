@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e8c1656802.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <title>YouTube Downloader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+
+        }
+        body{
+            background-color: rgb(178, 212, 201);
+        }
+
+        #navbar {
+            background-color: #cbdbdb;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            font-family: "Mozilla Headline", sans-serif;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+        }
+
+        nav h2 {
+            display: inline-block;
+            color: rgb(77, 7, 40);
+        }
+
+        #content{
+            display: flex;
+            width: 100vw;
+            height: 300px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items:center;
+            
+        }
+        .cn{
+            margin-top: 20px;
+        }
+        input[type="text"]{
+            width: 400px;
+            height: 40px;
+            border-radius: 10px;
+            padding-left: 20px;
+        }
+        input[type='submit']{
+            height: 40px;
+            width: auto;
+            padding: 0 20px 0 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <i class="fa-brands fa-youtube" style="color:red; font-size:30px;"></i>
+        <a href="/">
+            <h2>YouTube Downloader</h2>
+        </a>
+    </nav>
+    <div id="content">
+
+        <h2 class="cn">Download YouTube Videos</h2>
+        <form action="/" method="post" class="cn">
+            <!-- <label for="video_url">Youtube Video: </label> -->
+            <input type="text" placeholder="Paste YouTube video/Playlist/Channel" name="yt_url" id="video_url" required>
+            <input type="submit" value="Download">
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
